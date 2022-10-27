@@ -1,0 +1,32 @@
+<%-include ("partials/header.ejs")%>
+<%-include ("partials/main_nav.ejs")%>
+
+<main class = "contact">
+  <div class="container">
+  <p id = "contact-me">I'm always happy to make new friends and face new challenges. Feel free to say hi.<br>| 
+  <a href="mailto:binnysherifff@gmail.com" subject="Subject text"> Mail</a> |
+  </p>
+    <form id="contact" action="mailto:binnysheriff@gmail.com" method="post">
+      <h3 style="font-size: 40px">Quick Contact</h3>
+      <h4 style="font-size: 20px">Send me a message</h4>
+      <fieldset>
+        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your e-mail address" type="email" tabindex="3" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your phone number" type="tel" tabindex="5" required>
+      </fieldset>
+      <fieldset>
+        <textarea placeholder="Type your message here..." tabindex="7" required></textarea>
+      </fieldset>
+      <fieldset>
+      <input id="send-button" type="submit" value="Send" tabindex="9"/>
+      </fieldset>
+    </form>
+  </div>
+  </main>
+  <%-include ("partials/bottom_nav.ejs")%><%-include ("partials/footer.ejs")%>  
+ 
+

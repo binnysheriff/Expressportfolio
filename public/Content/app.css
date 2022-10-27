@@ -1,0 +1,403 @@
+/* custom css*/
+/*    Web Application Development
+ *    Assignment 1
+ *    Custom CSS
+ *    Author: Binet Sheriff
+ *    Student# 301253726
+ */
+
+/* Set Defaults for all page */
+
+* {
+    margin: 0;
+    padding: 0;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: Abel, sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    height: auto;
+  }
+  
+  /* Set space between Nav items */
+  
+  .nav-item {
+    margin-right: 20px;
+  }
+  
+  /* Define style for Home page */
+  .home-welcome {
+    margin: auto;
+    width: 100%;
+    height: 85vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../Assets/images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  .text-box {
+    height: 100%;
+    opacity: 1;
+    color: #fff;
+    margin: auto;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 50px;
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .container {
+    margin-top: 50px;
+  }
+  
+  .hello {
+    font-family: Abel, sans-serif;
+    font-size: 80px;
+  }
+  
+  .im-binny {
+    font-family: Abel, sans-serif;
+    font-size: 100px;
+  }
+  
+  /* .description-binny {
+    font-family: roboto, sans-serif;
+  } */
+  
+  /* Style the about page */
+  
+  .about-binny {
+    align-self: center;
+    margin-top: 30px;
+  }
+  
+  .about-binny a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #00162a;
+    background-color: rgb(51, 200, 201);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .about-binny a:hover {
+    color: #00162a;
+    background-color: #fff;
+  }
+  
+  .mission-binny {
+    font-family: Yaldevi, sans-serif;
+  }
+  
+  .nav-link {
+    font-size: 22px;
+  }
+  
+  .container--about {
+    /* width: 70%; */
+    margin: auto;
+    background-color: #fff;
+    height: 85vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  /* About Me */
+  
+  .introduction--binny {
+    margin-left: auto;
+    margin-right: auto;
+  
+    width: 70%;
+    display: flex;
+    /* margin-top: 15vh; */
+    padding-top: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+    gap: 15px;
+  }
+  
+  .name--binny {
+    margin: auto;
+  }
+  
+  .name--binny h1 {
+    padding: 0;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: Abel, sans-serif;
+  }
+  
+  .name--binny p {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  
+  .image--binny {
+    margin: auto;
+    width: 70%;
+  }
+  
+  .image--binny img {
+    margin-left: 15px;
+  }
+  
+  /* #description--bruno {
+    width: 100%;
+    margin: auto;
+    color: #e5e3e3;
+    background-color: #212529;
+    font-size: 32px;
+    line-height: 62px;
+    font-weight: 400;
+  }
+  .text--bruno {
+    width: 70%;
+    margin: auto;
+    
+  } */
+  
+  .information-binny {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .information-binny a {
+    text-decoration: none;
+    color: rgb(51, 200, 201);
+    /* background-color: #adadad; */
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 10px;
+  }
+  
+  /* Set the style of the Projects Page */
+  
+  .container-project {
+    min-height: 100vh;
+  }
+  .jumbotron {
+    /* width: 70%; */
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: Abel, sans-serif;
+    font-size: 200px;
+    font-weight: 400;
+  }
+  
+  .jumbotron h1 {
+    font-size: 80px;
+  }
+  
+  .portfolio-image {
+    width: 300px;
+    height: 195px;
+  }
+  
+  .selected-projects {
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    /* align-items: center; */
+    row-gap: 30px;
+    column-gap: 15px;
+  }
+  
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-description {
+    font-size: 25px;
+    display: inline-block;
+  }
+  
+  .services {
+    /* width: 50%; */
+    margin: auto;
+    padding-top: 30px;
+    font-size: 22px;
+    text-align: left;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* form */
+  
+  /* Contact form */
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+  
+  #contact-me {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  #contact-me a {
+    text-decoration: none;
+    color: rgb(51, 200, 201);
+    /* background-color: #adadad; */
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 10px;
+  }
+  
+  .contact {
+    background-color: #212529;
+    height: 80vh;
+    padding-top: 30px;
+  }
+  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea,
+  #contact button[type="submit"] {
+    font: 400 12px/16px "Abel", sans-serif;
+  }
+  
+  #contact {
+    background: #f9f9f9;
+    padding: 20px;
+    padding-bottom: 10px;
+    /* margin: 40px 0 10px 0; */
+  }
+  
+  #contact h3 {
+    color: #505050;
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+  }
+  
+  #contact h4 {
+    margin: 5px 0 15px;
+    text-align: center;
+    color: #767676;
+    display: block;
+    font-size: 1em;
+  }
+  
+  fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin: 0 0 5px;
+    padding: 10px;
+  }
+  
+  #contact input[type="text"]:hover,
+  #contact input[type="email"]:hover,
+  #contact input[type="tel"]:hover,
+  #contact input[type="url"]:hover,
+  #contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+  }
+  
+  #contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+  }
+  
+  .btn-primary {
+    color: #00162a;
+    background-color: rgb(51, 200, 201);
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    color: rgb(51, 200, 201);
+    background-color: #00162a;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #send-button {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 22px;
+    color: #00162a;
+    background-color: rgb(51, 200, 201);
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  #send-button:hover {
+    color: rgb(51, 200, 201);
+    background-color: #00162a;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #contact input:focus,
+  #contact textarea:focus {
+    outline: 0;
+    border: 1px solid #999;
+  }
+  ::-webkit-input-placeholder {
+    color: #888;
+  }
+  :-moz-placeholder {
+    color: #888;
+  }
+  ::-moz-placeholder {
+    color: #888;
+  }
+  :-ms-input-placeholder {
+    color: #888;
+  }

@@ -1,0 +1,86 @@
+   <!-- Web Application Development
+    Assignment 1
+    HTML
+    Author: Binet Sheriff
+    Student# 301253726 -->
+
+
+    <!--Main Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-5">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/home"> <img src="/Assets/images/aria_sm.jpg" style="width:250px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+      aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          
+          <% if(title == "Home") { %>
+            <li class="nav-item active">
+            <% } else { %>
+            <li class="nav-item">
+            <% } %>
+              <a class="nav-link"  href="/home"> Home</a>
+              <!-- <i class="fas fa-3x fa-laptop-house"></i> -->
+            </li>
+
+             <% if(title == "About") { %>
+            <li class="nav-item active">
+            <% } else { %>
+            <li class="nav-item">
+            <% } %>
+              <a class="nav-link" aria-current="page" href="/about"> About</a>
+              <!-- <i class="fas fa-3x fa-info-circle"></i> -->
+            </li>
+
+             <% if(title == "Projects") { %>
+            <li class="nav-item active">
+            <% } else { %>
+            <li class="nav-item">
+            <% } %>
+              <a class="nav-link" aria-current="page" href="/projects"> Projects</a>
+              <!-- <i class="fab fa-3x fa-elementor"></i> -->
+            </li>
+
+             <% if(title == "Services") { %>
+            <li class="nav-item active ">
+            <% } else { %>
+            <li class="nav-item">
+            <% } %>
+              <a class="nav-link" aria-current="page" href="/services"> Services</a>
+              <!-- <i class="fas fa-3x fa-cogs"></i> -->
+            </li>
+
+             <% if(title == "Contact") { %>
+            <li class="nav-item active ">
+            <% } else { %>
+            <li class="nav-item">
+            <% } %>
+              <a class="nav-link" aria-current="page" href="/contact"> Contact</a>
+              <!-- <i class="fas fa-3x fa-mobile-alt"></i> -->
+            </li>
+
+            <% if(title == "Business Contacts") { %>
+            <li class="nav-item active ">
+            <% } else { %>
+            <li class="nav-item">
+            <% } %>
+              <a class="nav-link" aria-current="page" href="/contact-list">Business Contacts</a>
+              <!-- <i class="fas fa-3x fa-cogs"></i> -->
+            </li>
+
+          <% if(typeof displayName == 'string' && displayName) { %>
+          
+          <li class="navbar-text"><i class="fas fa-lg fa-user"></i>Welcome, <%= displayName %></li>
+          <li class="nav-item"><a href="/logout" class="nav-link">
+            <i class="fas fa-lg fa-sign-out-alt"></i> Logout</a></li>
+          <%} else { %>
+              <li class="nav-item"><a href="/login" class="nav-link">
+              <i class="fas fa-lg fa-sign-in-alt"></i> Login</a></li>
+            <% } %>
+          
+      </div>
+    </div>
+  </nav>

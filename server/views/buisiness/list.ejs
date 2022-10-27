@@ -1,0 +1,53 @@
+<%- include ("../partials/header.ejs") %> <%- include ("../partials/main_nav.ejs") %>
+
+<main class="container">
+  <div class="row">
+    <div class="offset-md-1 col-md-10">
+      <h1><%= title %></h1>
+
+      <% if(typeof displayName == 'string' && displayName) { %>
+      <a href="/contact-list/add" class="btn btn-primary" role="button"
+        ><i class="fas fa-plus-circle"></i>Add a Contact</a
+      >
+      <% } %>
+      <br />
+      <table class="table table-bordered table-striped table-hover">
+        <!--Header Row -->
+        <tr>
+          <th class="text-center col-2">Name</th>
+          <th class="text-center col-2">Phone</th>
+          <th class="text-center col-2">email</th>
+          <% if(typeof displayName == 'string' && displayName) { %>
+          <th class="text-center col-1"></th>
+          <th class="text-center col-1"></th>
+          <% } %>
+        </tr>
+        <!-- Repeatable Template Row -->
+
+        <% for(let count = 0; count < ContactList.length; count++) { %>
+        <tr>
+          <td class="text-center col-2">
+            <%= ContactList[count].contact_name %>
+          </td>
+          <td class="text-center col-2">
+            <%= ContactList[count].contact_number %>
+          </td>
+          <td class="text-center col-2"><%= ContactList[count].email %></td>
+           <% if(typeof displayName == 'string' && displayName) { %>
+          <td class="text-center col-1"><a href="/contact-list/edit/<%=ContactList[count]._id%>" class="btn btn-primary btn-sm">
+            <i class="fas fa-pencil-alt"></i> Edit</a>
+          </td>
+          <td class="text-center col-1">
+              <a href="/contact-list/delete/<%=ContactList[count]._id%>" class="btn btn-danger btn-sm">
+            <i class="fas fa-trash-alt"></i> Delete</a>
+          </td>
+          <% } %>
+        </tr>
+        </tr>
+        <% } %>
+      </table>
+    </div>
+  </div>
+</main>
+
+<%- include ("../partials/bottom_nav.ejs") %> <%- include ("../partials/footer.ejs") %>
